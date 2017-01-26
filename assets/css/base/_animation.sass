@@ -1,0 +1,22 @@
+@include keyframes(spin)
+  0%
+    @include transform(rotate(0deg))
+
+  100%
+    @include transform(rotate(360deg))
+
+@include keyframes(shock)
+  0%
+    @include transform(scale(1,1))
+
+  10%
+    @include transform(scale(0.8,0.8))
+
+  20%
+    @include transform(scale(1,1))
+
+  30%
+    @include transform(scale(1.1,1.1))
+
+  100%
+    @include transform(scale(1,1))

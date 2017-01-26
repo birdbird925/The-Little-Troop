@@ -1,5 +1,0 @@
-
-Go TO PROJECT ROOT DIRECTORY RUN COMMAND 
-1. npm install
-
-2. gulp 
