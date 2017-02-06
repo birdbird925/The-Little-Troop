@@ -1,0 +1,42 @@
+#home-explore-btn
+  position: absolute
+  bottom: 0px
+  left: 50%
+  text-align: center
+  -webkit-transform: translate(-50%,0)
+  transform: translate(-50%,0)
+
+  h4
+    // font-size: 10px
+    font-size: 12px
+    letter-spacing: .12em
+    line-height: 18px
+    margin-left: -.12em
+    position: relative
+    cursor: pointer
+
+    span
+      position: relative
+      display: inline-block
+      padding: 0 .16em 0 .32em
+      margin-left: -.16em
+      overflow: hidden
+
+    span:after
+      // height: 2px
+      // margin-top: -1px
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      width: 0
+      height: 2px
+      margin-top: -2px
+      background-color: #393939
+      -webkit-transition: width 666ms cubic-bezier(.666,0,.333,1)
+      transition: width 666ms cubic-bezier(.666,0,.333,1)
+
+#home-explore-btn:hover
+  h4
+    span:after
+      width: 100%

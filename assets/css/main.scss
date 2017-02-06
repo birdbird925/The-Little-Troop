@@ -7,7 +7,10 @@
 @import "base/_typrography.sass";
 @import "base/_base.sass";
 
+@import "layouts/home.sass";
+
 @import "modules/fix-title.sass";
 @import "modules/header.sass";
 @import "modules/social-bar.sass";
 @import "modules/navigation.sass";
+@import "modules/explore-button.sass";

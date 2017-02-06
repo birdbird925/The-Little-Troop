@@ -12,6 +12,11 @@ body
   -webkit-text-size-adjust: 100%
   overflow: hidden;
 
+ul, ol
+  padding: 0
+  margin: 0
+  list-style: none
+
 .wrapper
   position: absolute
   top: 0
@@ -28,7 +33,33 @@ body
     bottom: 40px
     overflow: hidden
 
-ul, ol
-  padding: 0
-  margin: 0
-  list-style: none
+    .pages, .pages .pages-inner, .pages .pages-inner .page
+      width: 100%
+      overflow: hidden
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+
+    .pages .pages-inner .page
+      transition: transform 666ms cubic-bezier(.666,0,.333,1), -webkit-transform 666ms cubic-bezier(.666,0,.333,1)
+
+      .page-inner
+        position: absolute
+        top: 0
+        left: 0
+        right: -20px
+        height: 100%
+        overflow-x: hidden
+        overflow-y: scroll
+        -webkit-transform: translate3d(0,0,0)
+        transform: translate3d(0,0,0)
+        -webkit-overflow-scrolling: touch
+
+        .page-content
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          height: 100%
+          right: 20px
