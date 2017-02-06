@@ -757,6 +757,8 @@ ul, ol {
     clear: both;
     margin: 20px -20px 0;
     padding-top: 50px; }
+    .page-content .project-article .grid footer {
+      clear: both; }
     .page-content .project-article .grid .cell.square .cell-inner {
       padding-bottom: 100%; }
     .page-content .project-article .grid .cell.full {
