@@ -2,13 +2,13 @@
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro");
 @font-face {
   font-family: 'HelveticaNeueLTStd-lt';
-  src: url("fonts/helveticaneueltstd-lt.eot");
-  src: url("fonts/helveticaneueltstd-lt.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneueltstd-lt.woff") format("woff"), url("fonts/helveticaneueltstd-lt.ttf") format("truetype"), url("fonts/helveticaneueltstd-lt.svg#HelveticaNeueLTStd") format("svg"); }
+  src: url("/assets/fonts/helveticaneueltstd-lt.eot");
+  src: url("/assets/fonts/helveticaneueltstd-lt.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/helveticaneueltstd-lt.woff") format("woff"), url("/assets/fonts/helveticaneueltstd-lt.ttf") format("truetype"), url("/assets/fonts/helveticaneueltstd-lt.svg#HelveticaNeueLTStd") format("svg"); }
 
 @font-face {
   font-family: 'HelveticaNeueLTStd-hv';
-  src: url("fonts/helveticaneueltstd-hv.eot");
-  src: url("fonts/helveticaneueltstd-hv.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneueltstd-hv.woff") format("woff"), url("fonts/helveticaneueltstd-hv.ttf") format("truetype"), url("fonts/helveticaneueltstd-hv.svg#HelveticaNeueLTStd") format("svg"); }
+  src: url("/assets/fonts/helveticaneueltstd-hv.eot");
+  src: url("/assets/fonts/helveticaneueltstd-hv.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/helveticaneueltstd-hv.woff") format("woff"), url("/assets/fonts/helveticaneueltstd-hv.ttf") format("truetype"), url("/assets/fonts/helveticaneueltstd-hv.svg#HelveticaNeueLTStd") format("svg"); }
 
 @-webkit-keyframes spin {
   0% {
@@ -864,7 +864,11 @@ nav {
           background: #fff; }
         nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active {
           text-align: -webkit-match-parent;
-          cursor: default; }
+          cursor: default;
+          pointer-events: none; }
+          nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active a {
+            cursor: default;
+            pointer-events: none; }
         nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid {
           float: left;
           width: 33.33%;
