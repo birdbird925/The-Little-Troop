@@ -946,14 +946,15 @@ nav {
                   nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid .grid-inner .grid-content .overlay .copy p {
                     font-size: 10px;
                     font-weight: 100;
-                    margin-top: -2px; }
-        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active .grid-inner .grid-content,
-        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid:hover .grid-inner .grid-content {
+                    margin-top: -2px;
+                    color: #393939; }
+        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active .grid-inner .grid-content .overlay .copy h4 span:after,
+        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid:hover .grid-inner .grid-content .overlay .copy h4 span:after {
           -webkit-transform: translate(0, -100%);
-            -webkit-transform-transform: translate(0, -100%); }
-          nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active .grid-inner .grid-content .cover,
-          nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid:hover .grid-inner .grid-content .cover {
-            opacity: 1; }
+          transform: translate(0, -100%); }
+        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active .grid-inner .grid-content .cover,
+        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid:hover .grid-inner .grid-content .cover {
+          opacity: 1; }
 
 #home-explore-btn {
   position: absolute;

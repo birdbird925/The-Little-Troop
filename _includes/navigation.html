@@ -1,0 +1,33 @@
+<nav>
+  <div class="nav-inner">
+    <div class="nav-content">
+      <ul class="nav-grid-wrapper">
+        {% for link in site.data.navigation %}
+          <li class="nav-grid {% if page.url == link.url %} active  {% endif%}">
+            <a href="{{ link.url }}">
+              <div class="grid-inner">
+                <div class="grid-content">
+                  {% if link.has-cover %}
+                    <div class="cover">
+                      <div class="poster" style="background-image: url('assets/images/{{ link.cover }}');"></div>
+                    </div>
+                  {% endif %}
+                  <div class="overlay">
+                    <div class="copy">
+                      <h4>
+                        <span>{{ link.title }}</span>
+                      </h4>
+                      {% if link.has-cover %}
+                        <p>{{ link.description }}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

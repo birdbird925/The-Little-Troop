@@ -1,0 +1,29 @@
+- title: Intro
+  url: /
+  has-cover: 0
+
+- title: About
+  url: /about/
+  has-cover: 0
+
+- title: Contact
+  url: /contact/
+  has-cover: 0
+
+- title: Sebastian Coolidge
+  url: /projects/sebastian-coolidge/
+  has-cover: 1
+  cover: demo/FIRST-FEATURED-IMAGE-2.jpg
+  description: Identity + Web + E-Commerce
+
+- title: Untitled EP
+  url: /projects/untitled-ep/
+  has-cover: 1
+  cover: demo/untitled-ep-poster.jpg
+  description: Print + 3D Render
+
+- title: Mane
+  url: /projects/mane
+  has-cover: 1
+  cover: demo/mane-poster.jpg
+  description: Identity + Print + Web
