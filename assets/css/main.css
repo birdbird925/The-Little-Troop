@@ -53,6 +53,20 @@
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1); } }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -933,17 +947,17 @@ nav {
                     font-size: 10px;
                     font-weight: 100;
                     margin-top: -2px; }
-        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active .grid-inner .grid-content .overlay .copy h4 span:after,
-        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid:hover .grid-inner .grid-content .overlay .copy h4 span:after {
+        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active .grid-inner .grid-content,
+        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid:hover .grid-inner .grid-content {
           -webkit-transform: translate(0, -100%);
-                  transform: translate(0, -100%); }
-        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active .grid-inner .grid-content .cover,
-        nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid:hover .grid-inner .grid-content .cover {
-          opacity: 1; }
+            -webkit-transform-transform: translate(0, -100%); }
+          nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid.active .grid-inner .grid-content .cover,
+          nav .nav-inner .nav-content ul.nav-grid-wrapper li.nav-grid:hover .grid-inner .grid-content .cover {
+            opacity: 1; }
 
 #home-explore-btn {
   position: absolute;
-  bottom: 0px;
+  bottom: 8px;
   left: 50%;
   text-align: center;
   -webkit-transform: translate(-50%, 0);
@@ -971,6 +985,16 @@ nav {
       margin-top: -2px;
       background-color: #393939;
       transition: width 666ms cubic-bezier(0.666, 0, 0.333, 1); }
+  #home-explore-btn svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    fill: #393939;
+    margin-left: -8px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 #home-explore-btn:hover h4 span:after {
   width: 100%; }
