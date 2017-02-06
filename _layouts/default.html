@@ -22,13 +22,19 @@
 
       {% include header.html %}
       {% include menu-tab.html %}
-      {% include footer.html %}
+      {% include social.html %}
 
       <div class="wrapper-inner">
 
         <div class="pages">
           <div class="pages-inner">
-            {{ content }}
+            <div class="page">
+              <div class="page-inner">
+                <div class="page-content">
+                  {{ content }}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
