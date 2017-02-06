@@ -504,7 +504,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2; }
 
 p {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  letter-spacing: .08em; }
 
 em {
   font-style: italic; }
@@ -624,9 +625,11 @@ ul, ol {
   z-index: -1; }
 
 .title-zone {
-  margin-top: 40vh;
+  margin-top: 40vh; }
+
+.title-zone.centered {
   text-align: center; }
-  .title-zone h1 {
+  .title-zone.centered h1 {
     font-size: 48px;
     letter-spacing: .12em; }
 
@@ -696,6 +699,117 @@ ul, ol {
       font-size: 16px;
       line-height: 18px;
       margin: 5px 0 15px; }
+
+.page-content .cover {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: calc(66.666% - 20px);
+  height: 100%; }
+  .page-content .cover .poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden; }
+
+.page-content .title-zone {
+  left: 66.666%;
+  height: 144px;
+  text-align: left;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: 0; }
+  .page-content .title-zone h1 {
+    left: 40px;
+    margin-top: 3px;
+    font-size: 48px;
+    right: 40px;
+    margin-top: 3px;
+    line-height: 1em;
+    letter-spacing: .12em;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    position: absolute;
+    top: 50%; }
+
+.page-content .project-article {
+  margin-top: 55vh; }
+  .page-content .project-article .columns {
+    width: 33.333%;
+    margin-left: 66.666%; }
+    .page-content .project-article .columns .column {
+      width: 100%;
+      max-width: 512px;
+      position: relative;
+      float: left; }
+      .page-content .project-article .columns .column .column-inner {
+        margin-left: 40px;
+        margin: 0 40px; }
+  .page-content .project-article .grid {
+    clear: both;
+    margin: 20px -20px 0;
+    padding-top: 50px; }
+    .page-content .project-article .grid .cell.square .cell-inner {
+      padding-bottom: 100%; }
+    .page-content .project-article .grid .cell.full {
+      width: 100%; }
+    .page-content .project-article .grid .cell.half {
+      width: 50%; }
+    .page-content .project-article .grid .cell.video-cell {
+      width: 66.666%;
+      margin-left: 16.666%;
+      background-color: transparent; }
+      .page-content .project-article .grid .cell.video-cell .video-cell-inner {
+        margin: 20px; }
+        .page-content .project-article .grid .cell.video-cell .video-cell-inner .video-holder {
+          position: relative;
+          width: 100%;
+          height: 0;
+          padding-bottom: 56.25%;
+          overflow: hidden; }
+          .page-content .project-article .grid .cell.video-cell .video-cell-inner .video-holder iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; }
+    .page-content .project-article .grid .cell {
+      float: left;
+      position: relative;
+      overflow: hidden; }
+      .page-content .project-article .grid .cell .cell-inner {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 66.666%;
+        overflow: hidden; }
+        .page-content .project-article .grid .cell .cell-inner .cell-content {
+          background-color: #f7f8fa;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          top: 20px;
+          left: 20px;
+          right: 20px;
+          bottom: 20px;
+          position: absolute; }
+    .page-content .project-article .grid .thirds-block {
+      width: 100%;
+      float: left; }
+      .page-content .project-article .grid .thirds-block .cell.one-third {
+        width: 33.333%; }
+      .page-content .project-article .grid .thirds-block .cell.two-third {
+        width: 66.666%; }
+    .page-content .project-article .grid .thirds-block.right-first .cell {
+      float: right; }
 
 .page-title-wrapper {
   z-index: 1;
