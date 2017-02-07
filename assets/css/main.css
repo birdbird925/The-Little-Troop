@@ -606,7 +606,10 @@ ul, ol {
       background-size: contain;
       overflow: hidden;
       background-repeat: no-repeat;
-      background-position: 50% 50%; }
+      background-position: 50% 50%;
+      visibility: hidden; }
+    #collage .set .layer:first-child {
+      visibility: visible; }
     #collage .set .cover-layer {
       background-size: cover;
       top: 0;
